@@ -19,44 +19,53 @@ public:
     string getName();
     int getAge();
     string getBreed();
+    void bark();
 };
 
 void Dog::setName(string n)
 {
-
+    name = n;
 }
 
 void Dog::setAge(int a)
 {
-
+    age = a;
 }
 
 void Dog::setBreed(string b)
 {
-
+    breed = b;
 }
 
 string Dog::getName()
 {
-
+    return name;
 }
 
 int Dog::getAge()
 {
-
+    return age;
 }
 
 string Dog::getBreed()
 {
-
+    return breed;
 }
 
-string bark()
+void Dog::bark()
 {
     cout << "Woof! Woof!";
 }
 
 int main()
 {
+    Dog puppy;
 
+    puppy.setName("Theo");
+    puppy.setAge(1);
+    puppy.setBreed("Dachshund");
+
+    cout << "Name: " << puppy.getName() << endl << "Age: " << puppy.getAge() << endl << "Breed: " << puppy.getBreed() << endl;
+
+    puppy.bark();
 }
