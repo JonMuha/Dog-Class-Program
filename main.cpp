@@ -5,14 +5,14 @@
 
 using namespace std;
 
-class Dog
+class Dog // Created Class
 {
-private:
+private: // Private variables
     string name;
     int age;
     string breed;
 
-public:
+public: // Public setter and getter function
     void setName(string);
     void setAge(int);
     void setBreed(string);
@@ -22,50 +22,50 @@ public:
     void bark();
 };
 
-void Dog::setName(string n)
+void Dog::setName(string n) // set name function
 {
     name = n;
 }
 
-void Dog::setAge(int a)
+void Dog::setAge(int a) // set age function
 {
     age = a;
 }
 
-void Dog::setBreed(string b)
+void Dog::setBreed(string b) // set breed function
 {
     breed = b;
 }
 
-string Dog::getName()
+string Dog::getName() // get name function
 {
     return name;
 }
 
-int Dog::getAge()
+int Dog::getAge() // get age function
 {
     return age;
 }
 
-string Dog::getBreed()
+string Dog::getBreed() // get breed function
 {
     return breed;
 }
 
-void Dog::bark()
+void Dog::bark() // bark function
 {
     cout << "Woof! Woof!";
 }
 
-int main()
+int main() // main
 {
-    Dog puppy;
+    Dog puppy; // create Dog object named puppy
 
-    puppy.setName("Theo");
-    puppy.setAge(1);
-    puppy.setBreed("Dachshund");
+    puppy.setName("Theo"); // set puppy name using setter
+    puppy.setAge(1); // set puppy age using setter
+    puppy.setBreed("Dachshund"); // set puppy breed using setter
 
-    cout << "Name: " << puppy.getName() << endl << "Age: " << puppy.getAge() << endl << "Breed: " << puppy.getBreed() << endl;
+    cout << "Name: " << puppy.getName() << endl << "Age: " << puppy.getAge() << endl << "Breed: " << puppy.getBreed() << endl; // print output
 
-    puppy.bark();
+    puppy.bark(); // call bark function
 }
